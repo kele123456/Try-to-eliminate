@@ -117,7 +117,7 @@ public class MainActivity extends Activity
 		 * LayoutAnimationController la=new
 		 * LayoutAnimationController(sAnimation, 0.5f);
 		 */
-		preferences = getSharedPreferences("CardsGame", MODE_WORLD_READABLE);
+		preferences = getSharedPreferences("CardsGame", MODE_PRIVATE);
 		sp_edit = preferences.edit();
 
 		setWrongnum = preferences.getInt("Wrongnum", 3);
